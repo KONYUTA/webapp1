@@ -1,0 +1,2 @@
+class Notififation < ApplicationRecord
+end

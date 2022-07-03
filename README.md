@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## ER図
 
-Things you may want to cover:
+中間テーブルは省略
 
-* Ruby version
+```mermaid
+erDiagram
+Users ||--o{ Menus: ""
+Users ||--o{ Comments: ""
+Users ||--o{ Faborites: ""
+Users ||--o| Images: ""
 
-* System dependencies
+Menus ||--|{ Items: ""
+Menus ||--o{ Faborites: ""
+Menus }|--|{ Tags: ""
+Menus ||--o| Images: ""
+Menus }o--|| Genre: ""
+Menus ||--|{ Procedures: ""
+Menus ||--o{ Comments: ""
 
-* Configuration
 
-* Database creation
+Items ||--o| Images: ""
 
-* Database initialization
+Procedures ||--o| Images: ""
 
-* How to run the test suite
+Notification
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

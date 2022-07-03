@@ -970,3 +970,1464 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 299)
 
 
+Started GET "/users/1" for 133.55.113.240 at 2022-07-03 10:25:07 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:11:in `get_profile_image'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:15:in `get_profile_image'
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  ↳ app/models/user.rb:15:in `get_profile_image'
+  Rendered users/show.html.erb within layouts/application (Duration: 50.5ms | Allocations: 25972)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ec2-user/environment/webapp1/public/packs
+[Webpacker] warning ../../package.json: No license field
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+302 │ $headings-margin-bottom:      $spacer / 2 !default;
+    │                               ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 302:31  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($input-padding-y, 2) or calc($input-padding-y / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+498 │ $input-height-inner-quarter:            add($input-line-height * .25em, $input-padding-y / 2) !default;
+    │                                                                         ^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 498:73  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($custom-control-indicator-size, 2) or calc($custom-control-indicator-size / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+568 │ $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
+    │                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 568:49  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+713 │ $nav-divider-margin-y:              $spacer / 2 !default;
+    │                                     ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 713:37  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+DEPRECATION WARNING: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($spacer, 2) or calc($spacer / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+    ╷
+718 │ $navbar-padding-y:                  $spacer / 2 !default;
+    │                                     ^^^^^^^^^^^
+    ╵
+    node_modules/bootstrap/scss/_variables.scss 718:37  @import
+    node_modules/bootstrap/scss/bootstrap.scss 9:9      @import
+    app/javascript/stylesheets/application.scss 1:9     root stylesheet
+
+WARNING: 67 repetitive deprecation warnings omitted.
+
+
+[Webpacker] Hash: 3d0399f45ecf0464cb0a
+Version: webpack 4.46.0
+Time: 16269ms
+Built at: 07/03/2022 10:25:26 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5d4cdb3fb872a4c16fab.js   3.27 MiB  application  [emitted] [immutable]  application
+js/application-5d4cdb3fb872a4c16fab.js.map   3.46 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5d4cdb3fb872a4c16fab.js js/application-5d4cdb3fb872a4c16fab.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 633 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 1.01 MiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 475 bytes {application} [built]
+    + 119 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 18695.1ms | Allocations: 29270)
+Completed 200 OK in 18727ms (Views: 18696.9ms | ActiveRecord: 2.8ms | Allocations: 39632)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d06cdb0174ebc00485db99e0c250728673e4401/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2QzNKbGMybDZaVWtpRERFd01IZ3hNREFHT3daVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--1e90d03f3f0453b528785b2cb807306a83a9795c/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 10:25:26 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d06cdb0174ebc00485db99e0c250728673e4401", "variation_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (9.3ms) [0m[34mGenerated URL for file at key: y51yhjohbw7g0larum1i3vch7zgq (https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMDozMDoyNi44NDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--f2c8a48d3465bc2c7ec9b704c8d7c9fddaca9183/S__93511682.jpg)[0m
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMDozMDoyNi44NDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--f2c8a48d3465bc2c7ec9b704c8d7c9fddaca9183/S__93511682.jpg
+Completed 302 Found in 38ms (ActiveRecord: 0.9ms | Allocations: 7968)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMDozMDoyNi44NDhaIiwicHVyIjoiYmxvYl9rZXkifX0=--f2c8a48d3465bc2c7ec9b704c8d7c9fddaca9183/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 10:25:26 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/users/1/edit" for 133.55.113.240 at 2022-07-03 10:25:33 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `edit'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3144)
+Completed 200 OK in 35ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 5150)
+
+
+Started GET "/users/1/edit" for 133.55.113.240 at 2022-07-03 10:26:28 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `edit'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.3ms | Allocations: 581)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2418)
+Completed 200 OK in 17ms (Views: 9.9ms | ActiveRecord: 0.9ms | Allocations: 4149)
+
+
+Started GET "/users/1/edit" for 133.55.113.240 at 2022-07-03 10:26:45 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `edit'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 581)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 2419)
+Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 0.2ms | Allocations: 4169)
+
+
+Started GET "/users/1" for 133.55.113.240 at 2022-07-03 10:35:21 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:11:in `get_profile_image'
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:15:in `get_profile_image'
+  [1m[36mActiveStorage::VariantRecord Load (0.5ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  ↳ app/models/user.rb:15:in `get_profile_image'
+  [1m[36mMenu Load (4.0ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 87.6ms | Allocations: 28363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.7ms | Allocations: 30361)
+Completed 200 OK in 139ms (Views: 100.5ms | ActiveRecord: 9.1ms | Allocations: 40723)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d06cdb0174ebc00485db99e0c250728673e4401/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2QzNKbGMybDZaVWtpRERFd01IZ3hNREFHT3daVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--1e90d03f3f0453b528785b2cb807306a83a9795c/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 10:35:22 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d06cdb0174ebc00485db99e0c250728673e4401", "variation_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (2.2ms) [0m[34mGenerated URL for file at key: y51yhjohbw7g0larum1i3vch7zgq (https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMDo0MDoyMi4xODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a36cce66e449ae04d3a96cb95a6005a1e1a31ef2/S__93511682.jpg)[0m
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMDo0MDoyMi4xODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a36cce66e449ae04d3a96cb95a6005a1e1a31ef2/S__93511682.jpg
+Completed 302 Found in 20ms (ActiveRecord: 0.4ms | Allocations: 7968)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMDo0MDoyMi4xODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a36cce66e449ae04d3a96cb95a6005a1e1a31ef2/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 10:35:22 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/users/1" for 133.55.113.240 at 2022-07-03 10:35:32 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:11:in `get_profile_image'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:15:in `get_profile_image'
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  ↳ app/models/user.rb:15:in `get_profile_image'
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 17.6ms | Allocations: 3927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 5954)
+Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 0.5ms | Allocations: 7737)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMDo0MDoyMi4xODBaIiwicHVyIjoiYmxvYl9rZXkifX0=--a36cce66e449ae04d3a96cb95a6005a1e1a31ef2/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 10:35:32 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 299)
+
+
+Started GET "/users/1" for 133.55.113.240 at 2022-07-03 11:34:06 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:14:in `get_profile_image'
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:18:in `get_profile_image'
+  [1m[36mActiveStorage::VariantRecord Load (0.5ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  ↳ app/models/user.rb:18:in `get_profile_image'
+  [1m[36mMenu Load (0.5ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 88.8ms | Allocations: 31665)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.4ms | Allocations: 33663)
+Completed 200 OK in 138ms (Views: 102.8ms | ActiveRecord: 5.6ms | Allocations: 44023)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d06cdb0174ebc00485db99e0c250728673e4401/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2QzNKbGMybDZaVWtpRERFd01IZ3hNREFHT3daVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--1e90d03f3f0453b528785b2cb807306a83a9795c/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 11:34:06 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d06cdb0174ebc00485db99e0c250728673e4401", "variation_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (7.6ms) [0m[34mGenerated URL for file at key: y51yhjohbw7g0larum1i3vch7zgq (https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMTozOTowNi42MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1f5db419d23cab31e7e83a459319e6bb2b584071/S__93511682.jpg)[0m
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMTozOTowNi42MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1f5db419d23cab31e7e83a459319e6bb2b584071/S__93511682.jpg
+Completed 302 Found in 39ms (ActiveRecord: 0.5ms | Allocations: 7968)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMTozOTowNi42MDFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1f5db419d23cab31e7e83a459319e6bb2b584071/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 11:34:06 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/menus" for 133.55.113.240 at 2022-07-03 11:34:13 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  Rendered menus/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1514)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1586)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 4091)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!--タグリスト-->
+<% @tags.each do |tag|%>
+<%=tag.name %>
+<%="(#{tag.menus.count})" %><% end %>
+
+投稿一覧画面で投稿に紐づくタグを表示
+<% @menus.each do |menu| %>
+<i class="fas fa-tag"><%= menu.tags.map(&:name).join(', ') %></i>
+):
+1:    <!--タグリスト-->
+2:    <% @tags.each do |tag|%>
+3:    <%=tag.name %>
+4:    <%="(#{tag.menus.count})" %><% end %>
+5:    
+6:    投稿一覧画面で投稿に紐づくタグを表示
+7:    <% @menus.each do |menu| %>
+8:    <i class="fas fa-tag"><%= menu.tags.map(&:name).join(', ') %></i>
+  
+app/views/menus/index.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/menus/index.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/menus/index.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/menus/index.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/menus/index.html.erb:10: syntax error, unexpected end-of-input, expecting end
+app/views/menus/index.html.erb:10: syntax error, unexpected end-of-input, expecting end
+Started GET "/menus" for 133.55.113.240 at 2022-07-03 11:35:18 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ app/views/menus/index.html.erb:2
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:7
+  Rendered menus/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1632)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3723)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.8ms | Allocations: 5094)
+
+
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 11:35:27 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 21.1ms | Allocations: 8633)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 8703)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.4ms | Allocations: 13117)
+
+
+  
+ActionView::Template::Error (Could not find the association :menu_tags in model Menu):
+     5:    <h4>Opinion</h4>
+     6:    <%= f.text_area :caption %>
+     7:        <%= f.label"タグ (,で区切ると複数タグ登録できます)" %>
+     8:     <%= f.text_field :tags%>
+     9: 
+    10:     <%= f.submit "投稿",class:"btn btn-outline-primary btn-block" %>
+    11: <% end %>
+  
+app/views/menus/new.html.erb:8
+app/views/menus/new.html.erb:2
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 11:38:49 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3118)
+Completed 200 OK in 31ms (Views: 10.7ms | ActiveRecord: 1.1ms | Allocations: 13415)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 11:39:08 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19:in `create'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.9ms | Allocations: 8552)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/menus_controller.rb:22:in `create'
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 11:39:48 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 891)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2708)
+Completed 200 OK in 31ms (Views: 9.5ms | ActiveRecord: 1.1ms | Allocations: 12248)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 11:39:49 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 790)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'tag_name' for Menu.):
+  
+app/controllers/menus_controller.rb:17:in `create'
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 11:42:49 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 891)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2709)
+Completed 200 OK in 31ms (Views: 10.0ms | ActiveRecord: 1.2ms | Allocations: 12257)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 11:42:52 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2512)
+Completed 200 OK in 41ms (Views: 9.9ms | ActiveRecord: 0.8ms | Allocations: 11724)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 11:42:57 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 741)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2505)
+Completed 200 OK in 20ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 5048)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 11:43:03 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 741)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2505)
+Completed 200 OK in 28ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 5047)
+
+
+Started GET "/menus" for 133.55.113.240 at 2022-07-03 11:43:06 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ app/views/menus/index.html.erb:2
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:7
+  Rendered menus/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1563)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 3405)
+Completed 200 OK in 30ms (Views: 24.1ms | ActiveRecord: 0.3ms | Allocations: 5375)
+
+
+Started GET "/menus" for 133.55.113.240 at 2022-07-03 11:43:08 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ app/views/menus/index.html.erb:2
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:7
+  Rendered menus/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1309)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3148)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 3567)
+
+
+Started GET "/menus" for 133.55.113.240 at 2022-07-03 11:43:09 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ app/views/menus/index.html.erb:2
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:7
+  Rendered menus/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1307)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3146)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.2ms | Allocations: 3562)
+
+
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 11:43:18 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 738)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2575)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 2986)
+
+
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 11:47:09 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3074)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 4322)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 11:47:19 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:19:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 3056)
+Completed 200 OK in 21ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 5603)
+
+
+Started GET "/menus" for 133.55.113.240 at 2022-07-03 11:59:25 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ app/views/menus/index.html.erb:2
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:7
+  Rendered menus/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3818)
+Completed 200 OK in 51ms (Views: 23.4ms | ActiveRecord: 0.3ms | Allocations: 12778)
+
+
+Started GET "/genres/new" for 133.55.113.240 at 2022-07-03 11:59:31 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/genres/new"):
+  
+Started GET "/genres/new" for 133.55.113.240 at 2022-07-03 11:59:48 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by GenresController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/genres_controller.rb:10:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering genres/new.html.erb within layouts/application
+  Rendered genres/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2649)
+Completed 200 OK in 24ms (Views: 11.2ms | ActiveRecord: 1.2ms | Allocations: 7763)
+
+
+Started POST "/genres" for 133.55.113.240 at 2022-07-03 11:59:55 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by GenresController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "genre"=>{"name"=>"genre1"}, "commit"=>"投稿"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/genres_controller.rb:15:in `create'
+  [1m[36mGenre Create (5.5ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "genre1"], ["created_at", "2022-07-03 11:59:55.549760"], ["updated_at", "2022-07-03 11:59:55.549760"]]
+  ↳ app/controllers/genres_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/genres_controller.rb:15:in `create'
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/genres/1
+Completed 302 Found in 22ms (ActiveRecord: 10.8ms | Allocations: 4631)
+
+
+Started GET "/genres/1" for 133.55.113.240 at 2022-07-03 11:59:55 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2526)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2597)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.2ms | Allocations: 8851)
+
+
+  
+ActionView::Template::Error (undefined method `menus' for #<Genre:0x00007ff4246326b0>):
+    1: <%=@genre.name%>
+    2: <%@genre.menus.each do |menu|%>
+    3:     <%=menu.title%>
+    4: <%end%>
+  
+app/views/genres/show.html.erb:2
+Started GET "/genres/1" for 133.55.113.240 at 2022-07-03 12:00:31 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/genres_controller.rb:6:in `show'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/genres_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/genres/show.html.erb:2
+  Rendered genres/show.html.erb within layouts/application (Duration: 19.3ms | Allocations: 7137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 9021)
+Completed 200 OK in 51ms (Views: 28.6ms | ActiveRecord: 2.6ms | Allocations: 14571)
+
+
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:03:07 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 3603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 5421)
+Completed 200 OK in 40ms (Views: 19.1ms | ActiveRecord: 1.0ms | Allocations: 15440)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 12:03:14 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mMenu Create (5.8ms)[0m  [1m[32mINSERT INTO "menus" ("user_id", "genre_id", "title", "caption", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["title", "test"], ["caption", "test"], ["created_at", "2022-07-03 12:03:14.897516"], ["updated_at", "2022-07-03 12:03:14.897516"]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 13.4ms | Allocations: 20013)
+
+
+  
+NoMethodError (undefined method `save_tag' for #<Menu:0x00007ff42453c968>
+Did you mean?  saved_changes):
+  
+app/controllers/menus_controller.rb:25:in `create'
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:04:31 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2709)
+Completed 200 OK in 35ms (Views: 10.0ms | ActiveRecord: 1.9ms | Allocations: 12381)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 12:04:33 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mMenu Create (5.9ms)[0m  [1m[32mINSERT INTO "menus" ("user_id", "genre_id", "title", "caption", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["title", "test"], ["caption", "test"], ["created_at", "2022-07-03 12:04:34.020021"], ["updated_at", "2022-07-03 12:04:34.020021"]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 13.4ms | Allocations: 19781)
+
+
+  
+NameError (undefined local variable or method `new_menu_tag' for #<Menu:0x00000000061a7268>):
+  
+app/models/menu.rb:18:in `save_tag'
+app/controllers/menus_controller.rb:25:in `create'
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:05:01 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 2730)
+Completed 200 OK in 69ms (Views: 23.5ms | ActiveRecord: 4.5ms | Allocations: 12535)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 12:05:03 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mMenu Create (6.4ms)[0m  [1m[32mINSERT INTO "menus" ("user_id", "genre_id", "title", "caption", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["title", "test"], ["caption", "test"], ["created_at", "2022-07-03 12:05:03.635885"], ["updated_at", "2022-07-03 12:05:03.635885"]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 15.5ms | Allocations: 22889)
+
+
+  
+ActiveRecord::HasManyThroughAssociationNotFoundError (Could not find the association :menu_tags in model Menu):
+  
+app/models/menu.rb:19:in `save_tag'
+app/controllers/menus_controller.rb:25:in `create'
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:05:34 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2710)
+Completed 200 OK in 34ms (Views: 9.6ms | ActiveRecord: 1.0ms | Allocations: 12381)
+
+
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:05:36 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2567)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 2980)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 12:05:42 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mMenu Create (5.8ms)[0m  [1m[32mINSERT INTO "menus" ("user_id", "genre_id", "title", "caption", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["title", "test"], ["caption", "test"], ["created_at", "2022-07-03 12:05:42.318285"], ["updated_at", "2022-07-03 12:05:42.318285"]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 14.7ms | Allocations: 18227)
+
+
+  
+ActiveRecord::HasManyThroughOrderError (Cannot have a has_many :through association 'Menu#tags' which goes through 'Menu#menu_tags' before the through association is defined.):
+  
+app/models/menu.rb:19:in `save_tag'
+app/controllers/menus_controller.rb:25:in `create'
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:07:19 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2709)
+Completed 200 OK in 35ms (Views: 10.0ms | ActiveRecord: 1.1ms | Allocations: 12375)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 12:07:20 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mMenu Create (5.9ms)[0m  [1m[32mINSERT INTO "menus" ("user_id", "genre_id", "title", "caption", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["title", "test"], ["caption", "test"], ["created_at", "2022-07-03 12:07:20.835155"], ["updated_at", "2022-07-03 12:07:20.835155"]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 13.2ms | Allocations: 18109)
+
+
+  
+ActiveRecord::HasManyThroughOrderError (Cannot have a has_many :through association 'Menu#tags' which goes through 'Menu#menu_tags' before the through association is defined.):
+  
+app/models/menu.rb:19:in `save_tag'
+app/controllers/menus_controller.rb:25:in `create'
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:12:12 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2710)
+Completed 200 OK in 35ms (Views: 9.9ms | ActiveRecord: 1.1ms | Allocations: 12378)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 12:12:13 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mMenu Create (5.9ms)[0m  [1m[32mINSERT INTO "menus" ("user_id", "genre_id", "title", "caption", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["title", "test"], ["caption", "test"], ["created_at", "2022-07-03 12:12:13.968934"], ["updated_at", "2022-07-03 12:12:13.968934"]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTag Load (2.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag1"], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTag Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag1"], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTag Create (5.9ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "tag1"], ["created_at", "2022-07-03 12:12:14.007006"], ["updated_at", "2022-07-03 12:12:14.007006"]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 29.6ms | Allocations: 27827)
+
+
+  
+ActiveRecord::HasManyThroughOrderError (Cannot have a has_many :through association 'Menu#tags' which goes through 'Menu#menu_tags' before the through association is defined.):
+  
+app/controllers/menus_controller.rb:27:in `block in create'
+app/controllers/menus_controller.rb:25:in `each'
+app/controllers/menus_controller.rb:25:in `create'
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:14:18 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:13:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2710)
+Completed 200 OK in 34ms (Views: 10.4ms | ActiveRecord: 1.0ms | Allocations: 12397)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 12:14:20 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"test", "caption"=>"test", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mMenu Create (6.4ms)[0m  [1m[32mINSERT INTO "menus" ("user_id", "genre_id", "title", "caption", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["title", "test"], ["caption", "test"], ["created_at", "2022-07-03 12:14:20.541933"], ["updated_at", "2022-07-03 12:14:20.541933"]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag1"], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mMenuTag Create (7.8ms)[0m  [1m[32mINSERT INTO "menu_tags" ("menu_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["menu_id", 7], ["tag_id", 1], ["created_at", "2022-07-03 12:14:20.582714"], ["updated_at", "2022-07-03 12:14:20.582714"]]
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag2"], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTag Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag2"], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTag Create (3.7ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "tag2"], ["created_at", "2022-07-03 12:14:20.610876"], ["updated_at", "2022-07-03 12:14:20.610876"]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mMenuTag Create (3.7ms)[0m  [1m[32mINSERT INTO "menu_tags" ("menu_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["menu_id", 7], ["tag_id", 2], ["created_at", "2022-07-03 12:14:20.627577"], ["updated_at", "2022-07-03 12:14:20.627577"]]
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/menus/7
+Completed 302 Found in 137ms (ActiveRecord: 48.5ms | Allocations: 42261)
+
+
+Started GET "/menus/7" for 133.55.113.240 at 2022-07-03 12:14:20 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMenu Load (0.2ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:8:in `show'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/show.html.erb within layouts/application
+  Rendered menus/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2913)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2983)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.4ms | Allocations: 5976)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Menu:0x00007ff42469a620>):
+    1: <%=@menu.name%>
+    2: <% @menu.tags.each do |tag| %>
+    3:   <%=tag.name%><%="(#{tag.menus.count})" %>
+    4: <% end %>
+  
+app/views/menus/show.html.erb:1
+Started GET "/menus/7" for 133.55.113.240 at 2022-07-03 12:14:41 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:8:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/views/menus/show.html.erb:2
+  [1m[35m (16.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 1]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 2]]
+  ↳ app/views/menus/show.html.erb:3
+  Rendered menus/show.html.erb within layouts/application (Duration: 30.8ms | Allocations: 3847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 5776)
+Completed 200 OK in 50ms (Views: 24.5ms | ActiveRecord: 17.3ms | Allocations: 8416)
+
+
+Started GET "/menus/7?pp=disable" for 133.55.113.240 at 2022-07-03 12:15:53 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#show as HTML
+  Parameters: {"pp"=>"disable", "id"=>"7"}
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:8:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/views/menus/show.html.erb:2
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 1]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 2]]
+  ↳ app/views/menus/show.html.erb:3
+  Rendered menus/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4104)
+Completed 200 OK in 23ms (Views: 13.8ms | ActiveRecord: 1.5ms | Allocations: 5664)
+
+
+Started GET "/menus/7?pp=disable" for 133.55.113.240 at 2022-07-03 12:16:28 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MenusController#show as HTML
+  Parameters: {"pp"=>"disable", "id"=>"7"}
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:8:in `show'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/views/menus/show.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 1]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 2]]
+  ↳ app/views/menus/show.html.erb:3
+  Rendered menus/show.html.erb within layouts/application (Duration: 14.4ms | Allocations: 5643)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 7653)
+Completed 200 OK in 83ms (Views: 26.8ms | ActiveRecord: 2.2ms | Allocations: 28799)
+
+
+Started GET "/menus/7/edit" for 133.55.113.240 at 2022-07-03 12:16:35 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:36:in `edit'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:37:in `edit'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:38:in `edit'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/edit.html.erb within layouts/application
+  Rendered menus/edit.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 5410)
+Completed 200 OK in 45ms (Views: 20.0ms | ActiveRecord: 1.0ms | Allocations: 14758)
+
+
+Started PATCH "/menus/7" for 133.55.113.240 at 2022-07-03 12:16:44 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"testaa", "caption"=>"test", "tag_name"=>"tag1,tag2,tag3"}, "commit"=>"投稿", "id"=>"7"}
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:44:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:47:in `update'
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/users/1
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:50:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:50:in `update'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:50:in `update'
+  [1m[36mMenu Update (5.7ms)[0m  [1m[33mUPDATE "menus" SET "title" = ?, "updated_at" = ? WHERE "menus"."id" = ?[0m  [["title", "testaa"], ["updated_at", "2022-07-03 12:16:44.769442"], ["id", 7]]
+  ↳ app/controllers/menus_controller.rb:50:in `update'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:50:in `update'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/models/menu.rb:19:in `save_tag'
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag3"], ["LIMIT", 1]]
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTag Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag3"], ["LIMIT", 1]]
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTag Create (12.6ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "tag3"], ["created_at", "2022-07-03 12:16:44.812195"], ["updated_at", "2022-07-03 12:16:44.812195"]]
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/menu.rb:29:in `block in save_tag'
+  [1m[36mMenuTag Create (6.0ms)[0m  [1m[32mINSERT INTO "menu_tags" ("menu_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["menu_id", 7], ["tag_id", 3], ["created_at", "2022-07-03 12:16:44.846035"], ["updated_at", "2022-07-03 12:16:44.846035"]]
+  ↳ app/models/menu.rb:29:in `block in save_tag'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/menu.rb:29:in `block in save_tag'
+Redirected to 
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 43.0ms | Allocations: 24229)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/menus_controller.rb:52:in `update'
+Started PATCH "/menus/7" for 133.55.113.240 at 2022-07-03 12:17:40 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"testaa", "caption"=>"test", "tag_name"=>"tag1,tag2,tag3"}, "commit"=>"投稿", "id"=>"7"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/menus_controller.rb:44:in `update'
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:44:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:47:in `update'
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/users/1
+Completed 302 Found in 35ms (ActiveRecord: 2.0ms | Allocations: 15952)
+
+
+Started GET "/users/1" for 133.55.113.240 at 2022-07-03 12:17:40 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:14:in `get_profile_image'
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:18:in `get_profile_image'
+  [1m[36mActiveStorage::VariantRecord Load (0.5ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  ↳ app/models/user.rb:18:in `get_profile_image'
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 64.4ms | Allocations: 27949)
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 28019)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 4.0ms | Allocations: 29621)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Menu:0x00007faa9c032430>):
+    3: <%= @user.email%>
+    4: 
+    5: <%@user.menus.each do |menu| %>
+    6:     <%=menu.name%>
+    7: <% end %>
+  
+app/views/users/show.html.erb:6
+app/views/users/show.html.erb:5
+Started GET "/users/1" for 133.55.113.240 at 2022-07-03 12:18:33 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "profile_image"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:14:in `get_profile_image'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:18:in `get_profile_image'
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  ↳ app/models/user.rb:18:in `get_profile_image'
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:5
+  Rendered users/show.html.erb within layouts/application (Duration: 50.1ms | Allocations: 30356)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.5ms | Allocations: 32333)
+Completed 200 OK in 83ms (Views: 57.3ms | ActiveRecord: 3.6ms | Allocations: 40730)
+
+
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d06cdb0174ebc00485db99e0c250728673e4401/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2QzNKbGMybDZaVWtpRERFd01IZ3hNREFHT3daVSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--1e90d03f3f0453b528785b2cb807306a83a9795c/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 12:18:33 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Representations::RedirectController#show as JPEG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8d06cdb0174ebc00485db99e0c250728673e4401", "variation_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ? AND "active_storage_variant_records"."variation_digest" = ? LIMIT ?[0m  [["blob_id", 1], ["variation_digest", "2I4vacTweZZ9Jow7S2lQLqiNQvs="], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 2], ["record_type", "ActiveStorage::VariantRecord"], ["name", "image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: y51yhjohbw7g0larum1i3vch7zgq (https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMjoyMzozMy42MTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--f08f360126eaa9fe46798879d58b42d0b20740a3/S__93511682.jpg)[0m
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMjoyMzozMy42MTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--f08f360126eaa9fe46798879d58b42d0b20740a3/S__93511682.jpg
+Completed 302 Found in 21ms (ActiveRecord: 0.4ms | Allocations: 5471)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhlVFV4ZVdocWIyaGlkemRuTUd4aGNuVnRNV2t6ZG1Ob04zcG5jUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpU1dsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWxOZlh6a3pOVEV4TmpneUxtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuVTE5Zk9UTTFNVEUyT0RJdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNy0wM1QxMjoyMzozMy42MTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--f08f360126eaa9fe46798879d58b42d0b20740a3/S__93511682.jpg" for 133.55.113.240 at 2022-07-03 12:18:33 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"S__93511682"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started GET "/menus" for 133.55.113.240 at 2022-07-03 12:18:47 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/index.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ app/views/menus/index.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 1]]
+  ↳ app/views/menus/index.html.erb:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 2]]
+  ↳ app/views/menus/index.html.erb:4
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 3]]
+  ↳ app/views/menus/index.html.erb:4
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus"[0m
+  ↳ app/views/menus/index.html.erb:7
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 1]]
+  ↳ app/views/menus/index.html.erb:8:in `map'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 2]]
+  ↳ app/views/menus/index.html.erb:8:in `map'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 3]]
+  ↳ app/views/menus/index.html.erb:8:in `map'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 4]]
+  ↳ app/views/menus/index.html.erb:8:in `map'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 5]]
+  ↳ app/views/menus/index.html.erb:8:in `map'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 6]]
+  ↳ app/views/menus/index.html.erb:8:in `map'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/views/menus/index.html.erb:8:in `map'
+  Rendered menus/index.html.erb within layouts/application (Duration: 59.1ms | Allocations: 15814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 17557)
+Completed 200 OK in 75ms (Views: 69.3ms | ActiveRecord: 3.0ms | Allocations: 19990)
+
+
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:18:57 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1241)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3079)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3625)
+
+
+Started GET "/menus/7/edit" for 133.55.113.240 at 2022-07-03 12:19:04 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMenu Load (1.2ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:36:in `edit'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:37:in `edit'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:38:in `edit'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/edit.html.erb within layouts/application
+  Rendered menus/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1001)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 2840)
+Completed 200 OK in 37ms (Views: 15.6ms | ActiveRecord: 1.6ms | Allocations: 6119)
+
+
+Started PATCH "/menus/7" for 133.55.113.240 at 2022-07-03 12:19:13 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"testaa", "caption"=>"test", "tag_name"=>"tag1,tag2,tag3,tag4"}, "commit"=>"投稿", "id"=>"7"}
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:44:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:47:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:47:in `update'
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:49:in `update'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:49:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:49:in `update'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/models/menu.rb:19:in `save_tag'
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag4"], ["LIMIT", 1]]
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTag Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag4"], ["LIMIT", 1]]
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTag Create (7.0ms)[0m  [1m[32mINSERT INTO "tags" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "tag4"], ["created_at", "2022-07-03 12:19:13.111928"], ["updated_at", "2022-07-03 12:19:13.111928"]]
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/menu.rb:28:in `block in save_tag'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/menu.rb:29:in `block in save_tag'
+  [1m[36mMenuTag Create (5.5ms)[0m  [1m[32mINSERT INTO "menu_tags" ("menu_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["menu_id", 7], ["tag_id", 4], ["created_at", "2022-07-03 12:19:13.165998"], ["updated_at", "2022-07-03 12:19:13.165998"]]
+  ↳ app/models/menu.rb:29:in `block in save_tag'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/menu.rb:29:in `block in save_tag'
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/menus/7
+Completed 302 Found in 148ms (ActiveRecord: 28.5ms | Allocations: 26095)
+
+
+Started GET "/menus/7" for 133.55.113.240 at 2022-07-03 12:19:13 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:8:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/views/menus/show.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 1]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 2]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 3]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 4]]
+  ↳ app/views/menus/show.html.erb:3
+  Rendered menus/show.html.erb within layouts/application (Duration: 16.5ms | Allocations: 4054)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 5896)
+Completed 200 OK in 33ms (Views: 24.7ms | ActiveRecord: 1.0ms | Allocations: 7586)
+
+
+Started GET "/menus/new" for 133.55.113.240 at 2022-07-03 12:19:23 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering menus/new.html.erb within layouts/application
+  Rendered menus/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 720)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2557)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 2967)
+
+
+Started POST "/menus" for 133.55.113.240 at 2022-07-03 12:19:30 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "menu"=>{"title"=>"tea", "caption"=>"tea", "tag_name"=>"tag1,tag2"}, "commit"=>"投稿"}
+[31mUnpermitted parameter: :tag_name[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:18:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mMenu Create (2.0ms)[0m  [1m[32mINSERT INTO "menus" ("user_id", "genre_id", "title", "caption", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["genre_id", 1], ["title", "tea"], ["caption", "tea"], ["created_at", "2022-07-03 12:19:30.163932"], ["updated_at", "2022-07-03 12:19:30.163932"]]
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:24:in `create'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag1"], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mMenuTag Create (7.0ms)[0m  [1m[32mINSERT INTO "menu_tags" ("menu_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["menu_id", 8], ["tag_id", 1], ["created_at", "2022-07-03 12:19:30.177030"], ["updated_at", "2022-07-03 12:19:30.177030"]]
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "tag2"], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:26:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mMenuTag Create (3.6ms)[0m  [1m[32mINSERT INTO "menu_tags" ("menu_id", "tag_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["menu_id", 8], ["tag_id", 2], ["created_at", "2022-07-03 12:19:30.198444"], ["updated_at", "2022-07-03 12:19:30.198444"]]
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/menus_controller.rb:27:in `block in create'
+Redirected to https://a3122fc52bf14d37a1b7d56c7b029d9b.vfs.cloud9.ap-northeast-1.amazonaws.com/menus/8
+Completed 302 Found in 66ms (ActiveRecord: 28.0ms | Allocations: 15912)
+
+
+Started GET "/menus/8" for 133.55.113.240 at 2022-07-03 12:19:30 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMenu Load (0.1ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:8:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 8]]
+  ↳ app/controllers/menus_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 8]]
+  ↳ app/views/menus/show.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 1]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 2]]
+  ↳ app/views/menus/show.html.erb:3
+  Rendered menus/show.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4104)
+Completed 200 OK in 24ms (Views: 17.3ms | ActiveRecord: 0.6ms | Allocations: 6408)
+
+
+Started GET "/menus/7/edit" for 133.55.113.240 at 2022-07-03 12:19:35 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMenu Load (0.2ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:36:in `edit'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:37:in `edit'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:38:in `edit'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/edit.html.erb within layouts/application
+  Rendered menus/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 788)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2625)
+Completed 200 OK in 21ms (Views: 9.5ms | ActiveRecord: 0.4ms | Allocations: 5396)
+
+
+Started GET "/menus/7/" for 133.55.113.240 at 2022-07-03 12:19:38 +0000
+Cannot render console from 133.55.113.240! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MenusController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMenu Load (0.2ms)[0m  [1m[34mSELECT "menus".* FROM "menus" WHERE "menus"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/menus_controller.rb:8:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "tags"."name" FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/controllers/menus_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering menus/show.html.erb within layouts/application
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "menu_tags" ON "tags"."id" = "menu_tags"."tag_id" WHERE "menu_tags"."menu_id" = ?[0m  [["menu_id", 7]]
+  ↳ app/views/menus/show.html.erb:2
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 1]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 2]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 3]]
+  ↳ app/views/menus/show.html.erb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "menus" INNER JOIN "menu_tags" ON "menus"."id" = "menu_tags"."menu_id" WHERE "menu_tags"."tag_id" = ?[0m  [["tag_id", 4]]
+  ↳ app/views/menus/show.html.erb:3
+  Rendered menus/show.html.erb within layouts/application (Duration: 22.8ms | Allocations: 3904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 5743)
+Completed 200 OK in 37ms (Views: 29.9ms | ActiveRecord: 1.0ms | Allocations: 7311)
+
+

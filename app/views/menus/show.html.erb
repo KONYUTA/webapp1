@@ -1,0 +1,4 @@
+<%=@menu.title%>
+<% @menu.tags.each do |tag| %>
+  <%=tag.name%><%="(#{tag.menus.count})" %>
+<% end %>

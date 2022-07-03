@@ -1,0 +1,14 @@
+<% if @genre.errors.any? %>
+ <%= pluralize(@genre.errors.count, "error") %>  prohibited this obj from being saved:
+  <ul>
+   <% @genre.errors.full_messages. each do |message| %>
+    <li><%= message %></li>
+   <% end %>
+  </ul>
+ <% end %>
+<h1>投稿</h1>
+<%= form_with model: @genre, local:true do |f| %>
+   <h4>Name</h4>
+   <%= f.text_field :name %>
+    <%= f.submit "投稿",class:"btn btn-outline-primary btn-block" %>
+<% end %>

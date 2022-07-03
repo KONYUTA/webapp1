@@ -1,0 +1,9 @@
+<!--タグリスト-->
+<% @tags.each do |tag|%>
+<%=tag.name %>
+<%="(#{tag.menus.count})" %><% end %>
+
+投稿一覧画面で投稿に紐づくタグを表示
+<% @menus.each do |menu| %>
+<i class="fas fa-tag"><%= menu.tags.map(&:name).join(', ') %></i>
+<%end%>
